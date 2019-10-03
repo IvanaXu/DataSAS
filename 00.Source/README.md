@@ -66,3 +66,5 @@ When the start-up process completes, you will see the SAS University Edition Wel
 (3)From the SAS University Edition: Information Center, click Start SAS Studio.
 ```
 
+
+
