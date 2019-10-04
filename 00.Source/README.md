@@ -2,9 +2,15 @@
 
 > [SAS Documentation Viewer 9.4](https://support.sas.com/en/documentation.html)
 >
+> [SAS Products Support](https://support.sas.com/en/software/all-products-support.html)
+>
+> [SAS W3C](https://www.w3cschool.cn/sas/)
+>
 > 《The Little SAS Book》
 >
 > 《附件-SAS学习材料》
+>
+> 《Learning SAS by Example: A Programmer's Guide》
 
 #### 二、SAS Tools
 
