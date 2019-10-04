@@ -1,7 +1,7 @@
 #### 一、SAS Info
 
-> 《SAS Help》
-
+> [SAS Documentation Viewer 9.4](https://support.sas.com/en/documentation.html)
+>
 > 《The Little SAS Book》
 
 #### 二、SAS Tools
@@ -13,7 +13,9 @@ md、ipynb文件自**SAS University Edition**, md转pdf自**Typora**;
 ```
 00.Before You Begin
 
-To ensure a trouble-free installation, make sure your OS X computer meets the minimum system requirements;
+To ensure a trouble-free installation, 
+
+make sure your OS X computer meets the minimum system requirements;
 
 (1)System Options
 
