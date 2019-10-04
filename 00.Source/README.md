@@ -11,7 +11,7 @@ md、ipynb文件自**SAS University Edition**, md转pdf自**Typora**;
 > [unvbasicvapp__9411015__ova__en__sp0__1.ova](https://www.sas.com/en_us/software/university-edition/download-software.html)
 
 ```
-0.Before You Begin
+00.Before You Begin
 
 To ensure a trouble-free installation, make sure your OS X computer meets the minimum system requirements;
 
@@ -27,17 +27,17 @@ Mozilla Firefox 21 or later;
 
 Google Chrome 27 or later;
 
-1.Set Up
+01.Set Up
 
 First, download and install virtualization software on your computer. 
 
 We recommend Oracle VirtualBox for OS X, which is free.
 
-2.Download SAS® University Edition
+02.Download SAS® University Edition
 
 ...
 
-3.Configure
+03.Configure
 
 Import SAS University Edition into VirtualBox.
 
@@ -53,7 +53,7 @@ Import SAS University Edition into VirtualBox.
 
 Share your myfolders folder with VirtualBox.
 
-4.Use
+04.Use
 
 Start SAS University Edition.
 
@@ -65,6 +65,4 @@ When the start-up process completes, you will see the SAS University Edition Wel
 
 (3)From the SAS University Edition: Information Center, click Start SAS Studio.
 ```
-
-
 
