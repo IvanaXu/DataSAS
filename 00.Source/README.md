@@ -1,16 +1,19 @@
 #### 一、SAS Info
 
-> [SAS Documentation Viewer 9.4](https://support.sas.com/en/documentation.html)
+> [SAS Documentation Viewer](https://support.sas.com/en/documentation.html)
 >
 > [SAS Products Support](https://support.sas.com/en/software/all-products-support.html)
 >
-> [SAS W3C](https://www.w3cschool.cn/sas/)
+> [SAS By W3cschool](https://www.w3cschool.cn/sas/)
 >
 > 《The Little SAS Book》
 >
 > 《附件-SAS学习材料》
 >
 > 《Learning SAS by Example: A Programmer's Guide》
+>
+> 《Credit Risk Scorecards: Development and Implementation Using SAS》
+>
 
 #### 二、SAS Tools
 
@@ -18,7 +21,10 @@ md、ipynb文件自**SAS University Edition**, md转pdf自**Typora**;
 
 > [unvbasicvapp__9411015__ova__en__sp0__1.ova](https://www.sas.com/en_us/software/university-edition/download-software.html)
 
+
 ```
+# SAS University Edition
+
 00.Before You Begin
 
 To ensure a trouble-free installation, 
