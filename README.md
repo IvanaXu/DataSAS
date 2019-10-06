@@ -15,7 +15,7 @@
 > t07.SAS宏
 >
 
-> x01_graph
+> x01_Graph
 >
 > x02_KolmogorovSmirnov
 >
