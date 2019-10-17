@@ -26,7 +26,7 @@ PROC PRINT DATA = TA(OBS = 20);
 RUN;
 ```
 
-    SAS Connection established. Subprocess id is 10751
+    SAS Connection established. Subprocess id is 2811
 
 
 
@@ -1280,15 +1280,10 @@ RUN;
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
    "http://www.w3.org/TR/html4/strict.dtd">
-
 <html>
-<head>
-  <title></title>
-  <meta http-equiv="content-type" content="text/html; charset=None">
-</head>
-<body>
+
 <h2></h2>
-<div class="highlight"><pre><span></span><span class="s">49   ods listing close;ods html5 (id=saspy_internal) file=stdout options(bitmap_mode=&#39;inline&#39;) device=svg style=HTMLBlue; ods</span><br><span class="s">49 ! graphics on / outputfmt=png;</span><br><span class="cm">NOTE: Writing HTML5(SASPY_INTERNAL) Body file: STDOUT</span><br><span class="s">50   </span><br><span class="s">51   PROC SORT DATA = TA;</span><br><span class="s">52   BY MSRP;</span><br><span class="s">53   RUN;</span><br><span class="cm">NOTE: There were 428 observations read from the data set WORK.TA.</span><br><span class="cm">NOTE: The data set WORK.TA has 428 observations and 2 variables.</span><br><span class="cm">NOTE: PROCEDURE SORT used (Total process time):</span><br><span class="cm">      real time           0.00 seconds</span><br><span class="cm">      cpu time            0.00 seconds</span><br><span class="cm">      </span><br><span class="s">54   </span><br><span class="s">55   ods html5 (id=saspy_internal) close;ods listing;</span><br><br><span class="s">56   </span><br></pre></div>
+<div class="highlight"><pre><span></span><span class="s">49   ods listing close;ods html5 (id=saspy_internal) file=stdout options(bitmap_mode=&#39;inline&#39;) device=svg style=HTMLBlue; ods</span><br><span class="s">49 ! graphics on / outputfmt=png;</span><br><span class="cm">NOTE: Writing HTML5(SASPY_INTERNAL) Body file: STDOUT</span><br><span class="s">50   </span><br><span class="s">51   PROC SORT DATA = TA;</span><br><span class="s">52   BY MSRP;</span><br><span class="s">53   RUN;</span><br><span class="cm">NOTE: There were 428 observations read from the data set WORK.TA.</span><br><span class="cm">NOTE: The data set WORK.TA has 428 observations and 2 variables.</span><br><span class="cm">NOTE: PROCEDURE SORT used (Total process time):</span><br><span class="cm">      real time           0.01 seconds</span><br><span class="cm">      cpu time            0.01 seconds</span><br><span class="cm">      </span><br><span class="s">54   </span><br><span class="s">55   ods html5 (id=saspy_internal) close;ods listing;</span><br><br><span class="s">56   </span><br></pre></div>
 </body>
 </html>
 
@@ -6108,6 +6103,44 @@ a:visited { color: #800080 }
 </html>
 
 
+
+
+**IV值(Information Value)：**
+
+在确定模型预测目标后，对于二分类的目标变量，一般用 IV 值(Information Value)以挑选变量。
+
+原理公式如下图:
+
+|-|Good|Bad|Good%|Bad%|----WOE---|------------------------IV----------------------|
+|-|-|-|-|-|-|-|
+|-|-|-|$(1)$|$(2)$|$log(1/2)$|$(1-2)*WOE$|
+|$Group_1$|$G_1$|$B_1$|$G_1/G$|$B_1/B$|$log(\frac{G_1/G}{B_1/B})$|$(G_1/G-B_1/B)\times log(\frac{G_1/G}{B_1/B})$|
+|$Group_2$|$G_2$|$B_2$|$G_2/G$|$B_2/B$|$log(\frac{G_2/G}{B_2/B})$|$(G_2/G-B_2/B)\times log(\frac{G_2/G}{B_2/B})$|
+|...|||||||
+|$Group_N$|$G_N$|$B_N$|$G_N/G$|$B_N/B$|$log(\frac{G_N/G}{B_N/B})$|$(G_N/G-B_N/B)\times log(\frac{G_N/G}{B_N/B})$|
+|$Total$|$G=\sum{G_i}$|$B=\sum{B_i}$|-|-|-|$\sum{(\frac{G_i}{G}-\frac{B_i}{B})\times log(\frac{G_i/G}{B_i/B})}$|
+
+可解释为衡量特征包含预测变量浓度的指标。
+
+示例如下图，该变量各取值 IV 值以及总体 IV 值，0.197 > 0.1，有一定的预测性。
+
+|-|非目标数|目标数|总计|WOE|IV|
+|-|-|-|-|-|-|
+|A61|386|217|603|0.271|0.047|
+|A62|69|34|103|0.140|0.002|
+|A63|52|11|63|-0.707|0.027|
+|A64|42|6|48|-1.099|0.044|
+|A65|151|32|183|-0.704|0.077|
+|$Total$|700|300|1000|-|**0.197**|
+
+一般认定 
+> IV<0.02 即没有预测性，不可用;
+>
+> 0.02<=IV<0.1 即弱预测性; 
+>
+> 0.1<=IV<0.2 即有一定的预测性;
+>
+> 0.2<IV 即高预测性;
 
 
 
