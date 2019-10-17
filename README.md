@@ -22,6 +22,8 @@
 
 ```
 TODO:
-    * PHREG
+    * Encrypt
+    ** PHREG
+    *** /
 ```
 
