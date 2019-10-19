@@ -20,9 +20,13 @@
 >
 > x03_SASEncrypt
 >
+> x04_SASHash
+>
 
 ```
 TODO:
     * PHREG
-    ** /
+    ** PROC XXX 
+    *** /
 ```
+
