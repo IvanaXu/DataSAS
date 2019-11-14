@@ -68,15 +68,15 @@ telnet: Unable to connect to remote host
 
 配置并测试，如下：
 
-<img src="x05_SASbyODBC/0.Source/p010010010.png" alt="p010" style="zoom:40%;"/>
+<img src="./0.Source/p010010010.png" alt="p010" style="zoom:40%;"/>
 
-<img src="x05_SASbyODBC/0.Source/p020020020.png" alt="p020" style="zoom:40%;"/>
+<img src="./0.Source/p020020020.png" alt="p020" style="zoom:40%;"/>
 
-<img src="x05_SASbyODBC/0.Source/p030030030.png" alt="p030" style="zoom:40%;"/>
+<img src="./0.Source/p030030030.png" alt="p030" style="zoom:40%;"/>
 
 均测试通过Test Connection，并可查看存在表。
 
-<img src="x05_SASbyODBC/0.Source/p040040040.png" alt="p040" style="zoom:50%;"/>
+<img src="./0.Source/p040040040.png" alt="p040" style="zoom:50%;"/>
 
 #### 三、ODBC驱动
 
@@ -84,7 +84,7 @@ telnet: Unable to connect to remote host
 
 一般来说，打开ODBC 数据源管理器的用户DSN添加，如下：
 
-<img src="x05_SASbyODBC/0.Source/p050050050.png" alt="p050" style="zoom:40%;"/>
+<img src="./0.Source/p050050050.png" alt="p050" style="zoom:40%;"/>
 
 添加ODBC驱动，以实现在此出现新驱动。
 
@@ -182,11 +182,11 @@ Oracle ODBC Driver is installed successfully.
 
 查看ODBC，可得：
 
-<img src="x05_SASbyODBC/0.Source/p080080080.png" alt="p080" style="zoom:40%;"/>
+<img src="./0.Source/p080080080.png" alt="p080" style="zoom:40%;"/>
 
 配置并测试，可得：
 
-<img src="x05_SASbyODBC/0.Source/p090090090.png" alt="p090" style="zoom:40%;"/>
+<img src="./0.Source/p090090090.png" alt="p090" style="zoom:40%;"/>
 
 若无TNS，则配置为123.456.789.000:49161/orcl
 
@@ -204,11 +204,11 @@ https://ivan-bucket-out-001.oss-cn-beijing.aliyuncs.com/out/mysql-connector-odbc
 
 点击安装后，查看ODBC，可得：
 
-<img src="x05_SASbyODBC/0.Source/p060060060.png" alt="p060" style="zoom:40%;"/>
+<img src="./0.Source/p060060060.png" alt="p060" style="zoom:40%;"/>
 
 配置并测试，可得：
 
-<img src="x05_SASbyODBC/0.Source/p070070070.png" alt="p070" style="zoom:40%;"/>
+<img src="./0.Source/p070070070.png" alt="p070" style="zoom:40%;"/>
 
 
 
@@ -254,17 +254,24 @@ The configuration folders are created successfully.
 # C:\App\v10.1fp6_ntx64_odbc_cli\clidriver\bin>
 ```
 
+如果版本较老或上述命令无效，
+
+```
+# db2oreg1 –i
+并添加路径至Path
+```
+
 查看ODBC，可得：
 
-<img src="x05_SASbyODBC/0.Source/p100100100.png" alt="p100" style="zoom:40%;"/>
+<img src="./0.Source/p100100100.png" alt="p100" style="zoom:40%;"/>
 
 配置并测试，可得：
 
-<img src="x05_SASbyODBC/0.Source/p101101101.png" alt="p101" style="zoom:40%;"/>
+<img src="./0.Source/p101101101.png" alt="p101" style="zoom:40%;"/>
 
-<img src="x05_SASbyODBC/0.Source/p102102102.png" alt="p102" style="zoom:40%;"/>
+<img src="./0.Source/p102102102.png" alt="p102" style="zoom:40%;"/>
 
-<img src="x05_SASbyODBC/0.Source/p103103103.png" alt="p103" style="zoom:40%;"/>
+<img src="./0.Source/p103103103.png" alt="p103" style="zoom:40%;"/>
 
 #### 四、SAS读取
 
