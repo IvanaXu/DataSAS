@@ -1,5 +1,40 @@
 ### SASbyODBC
 
+#### 〇、简要
+
+```
+ODBC概念
+开放数据库连接（Open Database Connectivity，ODBC）是为解决异构数据库间的数据共享而产生的，现已成为WOSA(The Windows Open System Architecture(Windows开放系统体系结构))的主要部分和基于Windows环境的一种数据库访问接口标准ODBC 为异构数据库访问提供统一接口，允许应用程序以SQL 为数据存取标准，存取不同DBMS管理的数据；使应用程序直接操纵DB中的数据，免除随DB的改变而改变。用ODBC 可以访问各类计算机上的DB文件，甚至访问如Excel 表和ASCII数据文件这类非数据库对象。
+```
+
+```SAS
+/*
+ODBC LIBNAME Statement Examples
+In this example, USER=, PASSWORD=, and DATASRC= are connection options. 
+*/
+libname mydblib odbc user=myusr1 password=mypwd1 datasrc=mydatasource;
+
+/*
+In this next example, the libref MYLIB uses the ODBC engine to connect to an Oracle database. The connection options are USER=, PASSWORD=, and DATASRC=. 
+*/
+libname mydblib odbc datasrc=mydatasourcemydatasource user=myusr1 password=mypwd1;
+
+proc print data=mydblib.customers;
+   where state='CA';
+run;
+
+/*
+In the next example, the libref MYDBLIB uses the ODBC engine to connect to a Microsoft SQL Server database. The connection option is NOPROMPT=. 
+*/
+libname mydblib odbc noprompt="uid=myusr1;pwd=mypwd1;dsn=sqlservr;" stringdates=yes;
+
+proc print data=mydblib.customers;
+   where state='CA';
+run;
+```
+
+
+
 #### 一、数据库准备
 
 过程略。已备：
@@ -11,6 +46,8 @@
 | IBM db2    | 123.456.789.000 | 50000 | db2inst1 | db2inst1-pwd | sample   |
 
 *// Host 已加密，需注意各数据库版本*
+
+
 
 #### 二、连接测试
 
@@ -77,6 +114,8 @@ telnet: Unable to connect to remote host
 均测试通过Test Connection，并可查看存在表。
 
 <img src="./0.Source/p040040040.png" alt="p040" style="zoom:50%;"/>
+
+
 
 #### 三、ODBC驱动
 
@@ -272,6 +311,8 @@ The configuration folders are created successfully.
 <img src="./0.Source/p102102102.png" alt="p102" style="zoom:40%;"/>
 
 <img src="./0.Source/p103103103.png" alt="p103" style="zoom:40%;"/>
+
+
 
 #### 四、SAS读取
 
