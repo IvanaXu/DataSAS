@@ -90,7 +90,7 @@ telnet: Unable to connect to remote host
 
 （1）Oracle 11g
 
-根据以下链接，注意版本和位数。
+根据以下链接，注意版本和位数。[官方链接](https://www.oracle.com/technetwork/cn/topics/winia64soft-083954-zhs.html)
 
 ```
 # 官方下载链接
@@ -192,7 +192,7 @@ Oracle ODBC Driver is installed successfully.
 
 （2）Mysql
 
-根据以下链接，注意版本和位数。
+根据以下链接，注意版本和位数。[官方链接](https://dev.mysql.com/downloads/connector/odbc/)
 
 ```
 # 官方下载链接
@@ -214,7 +214,7 @@ https://ivan-bucket-out-001.oss-cn-beijing.aliyuncs.com/out/mysql-connector-odbc
 
 （3）IBM db2
 
-根据以下链接，注意版本和位数。
+根据以下链接，注意版本和位数。[官方链接](https://www.ibm.com/support/pages/db2-odbc-cli-driver-download-and-installation-information)
 
 ```
 # 官方下载链接
