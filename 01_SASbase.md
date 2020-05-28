@@ -61,10 +61,10 @@ RUN;
 
 PROC PRINT DATA = TMP0;
 RUN;
+```
 
 **The SAS System**
 
-```
 |  Obs |  SEX |   X1 |   X2 |   X3 |
 | ---: | ---: | ---: | ---: | ---: |
 |    1 |    F |    1 |    2 |    3 |
