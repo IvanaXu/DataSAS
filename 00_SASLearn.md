@@ -1,4 +1,5 @@
-#### 一、SAS Info
+### 一、SAS Info
+----
 
 > [SAS Documentation Viewer](https://support.sas.com/en/documentation.html)
 >
@@ -15,11 +16,10 @@
 > 《Credit Risk Scorecards: Development and Implementation Using SAS》
 >
 
-#### 二、SAS Tools
+### 二、SAS Tools
+----
 
-md、ipynb文件自**SAS University Edition**, md转pdf自**Typora**;
-
-> [unvbasicvapp__9411015__ova__en__sp0__1.ova](https://www.sas.com/en_us/software/university-edition/download-software.html)
+> https://www.sas.com/en_us/software/university-edition/download-software.html)
 
 
 ```
