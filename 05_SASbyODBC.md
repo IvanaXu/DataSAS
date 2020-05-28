@@ -103,15 +103,15 @@ telnet: Unable to connect to remote host
 
 配置并测试，如下：
 
-<img src="./0.Source/p0501.png" alt="p010" style="zoom:40%;"/>
+<img src="./00.Source/p0501.png" alt="p010" style="zoom:40%;"/>
 
-<img src="./0.Source/p0502.png" alt="p020" style="zoom:40%;"/>
+<img src="./00.Source/p0502.png" alt="p020" style="zoom:40%;"/>
 
-<img src="./0.Source/p0503.png" alt="p030" style="zoom:40%;"/>
+<img src="./00.Source/p0503.png" alt="p030" style="zoom:40%;"/>
 
 均测试通过Test Connection，并可查看存在表。
 
-<img src="./0.Source/p0504.png" alt="p040" style="zoom:50%;"/>
+<img src="./00.Source/p0504.png" alt="p040" style="zoom:50%;"/>
 
 
 
@@ -121,7 +121,7 @@ telnet: Unable to connect to remote host
 
 一般来说，打开ODBC 数据源管理器的用户DSN添加，如下：
 
-<img src="./0.Source/p0505.png" alt="p050" style="zoom:40%;"/>
+<img src="./00.Source/p0505.png" alt="p050" style="zoom:40%;"/>
 
 添加ODBC驱动，以实现在此出现新驱动。
 
@@ -219,11 +219,11 @@ Oracle ODBC Driver is installed successfully.
 
 查看ODBC，可得：
 
-<img src="./0.Source/p0506.png" alt="p080" style="zoom:40%;"/>
+<img src="./00.Source/p0506.png" alt="p080" style="zoom:40%;"/>
 
 配置并测试，可得：
 
-<img src="./0.Source/p0507.png" alt="p090" style="zoom:40%;"/>
+<img src="./00.Source/p0507.png" alt="p090" style="zoom:40%;"/>
 
 若无TNS，则配置为123.456.789.000:49161/orcl
 
@@ -241,11 +241,11 @@ https://ivan-bucket-out-001.oss-cn-beijing.aliyuncs.com/out/mysql-connector-odbc
 
 点击安装后，查看ODBC，可得：
 
-<img src="./0.Source/p0508.png" alt="p060" style="zoom:40%;"/>
+<img src="./00.Source/p0508.png" alt="p060" style="zoom:40%;"/>
 
 配置并测试，可得：
 
-<img src="./0.Source/p0509.png" alt="p070" style="zoom:40%;"/>
+<img src="./00.Source/p0509.png" alt="p070" style="zoom:40%;"/>
 
 
 
@@ -300,15 +300,15 @@ The configuration folders are created successfully.
 
 查看ODBC，可得：
 
-<img src="./0.Source/p0510.png" alt="p100" style="zoom:40%;"/>
+<img src="./00.Source/p0510.png" alt="p100" style="zoom:40%;"/>
 
 配置并测试，可得：
 
-<img src="./0.Source/p0511A.png" alt="p101" style="zoom:40%;"/>
+<img src="./00.Source/p0511.png" alt="p101" style="zoom:40%;"/>
 
-<img src="./0.Source/p0512.png" alt="p102" style="zoom:40%;"/>
+<img src="./00.Source/p0512.png" alt="p102" style="zoom:40%;"/>
 
-<img src="./0.Source/p0513.png" alt="p103" style="zoom:40%;"/>
+<img src="./00.Source/p0513.png" alt="p103" style="zoom:40%;"/>
 
 
 
