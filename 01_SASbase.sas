@@ -24,13 +24,6 @@ RUN;
 
 
 /* */
-/* TEST.CSV
-1,2
-3,4
-1,3
-2,5
-*/
-
 PROC IMPORT DATAFILE = "TEST.CSV"
 OUT = TMP2 DBMS = CSV REPLACE;
 GETNAMES = NO;
@@ -47,11 +40,6 @@ RUN;
 
 PROC PRINT DATA = TMP3;
 RUN;
-/*
-Obs	A
------
-1		1
-*/
 
 
 /* */
