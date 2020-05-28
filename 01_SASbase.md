@@ -61,6 +61,9 @@ RUN;
 
 PROC PRINT DATA = TMP0;
 RUN;
+
+**The SAS System**
+
 ```
 |  Obs |  SEX |   X1 |   X2 |   X3 |
 | ---: | ---: | ---: | ---: | ---: |
@@ -78,6 +81,9 @@ RUN;
 PROC PRINT DATA = TMP1;
 RUN;
 ```
+
+**The SAS System**
+
 |  Obs |  SEX |   X1 |   X2 |   X3 |
 | ---: | ---: | ---: | ---: | ---: |
 |    1 |    F |    1 |    2 |    3 |
@@ -100,6 +106,9 @@ RUN;
 PROC PRINT DATA = TMP2;
 RUN;
 ```
+
+**The SAS System**
+
 |  Obs | VAR1 | VAR2 |
 | ---: | ---: | ---: |
 |    1 |    1 |    2 |
@@ -159,6 +168,9 @@ RUN;
 PROC PRINT DATA = TMP3;
 RUN;
 ```
+
+**The SAS System**
+
 |  Obs |    A |
 | ---: | ---: |
 |    1 |    1 |
@@ -178,6 +190,8 @@ PROC PRINT DATA = TMP2;
 RUN;
 ```
 
+**The SAS System**
+
 |  Obs | VAR1 | VAR2 |
 | ---: | ---: | ---: |
 |    1 |    1 |    2 |
@@ -193,6 +207,8 @@ RUN;
 PROC PRINT DATA = TMP2;
 RUN;
 ```
+
+**The SAS System**
 
 |  Obs | VAR1 | VAR2 |
 | ---: | ---: | ---: |
@@ -211,6 +227,8 @@ RUN;
 PROC PRINT DATA = TMP2;
 RUN;
 ```
+
+**The SAS System**
 
 |  Obs | VAR1 | VAR2 |
 | ---: | ---: | ---: |
@@ -232,12 +250,16 @@ TABLE VAR1;
 RUN;
 ```
 
+**The SAS System**
+
 |  Obs | VAR1 | VAR2 |
 | ---: | ---: | ---: |
 |    1 |    1 |    2 |
 |    2 |    1 |    3 |
 |    3 |    3 |    4 |
 |    4 |    2 |    5 |
+
+**The SAS System**
 
 | VAR1 | Frequency | Percent | Cumulative Frequency | Cumulative Percent |
 | ---: | --------: | ------: | -------------------: | -----------------: |
@@ -255,6 +277,8 @@ PROC FREQ DATA = TMP2;
 TABLE VAR1 * VAR2;
 RUN;
 ```
+
+**The SAS System**
 
 |  Obs | VAR1 | VAR2 |
 | ---: | ---: | ---: |
@@ -291,6 +315,8 @@ PROC PRINT DATA = TMP4_1;
 RUN;
 ```
 
+**The SAS System**
+
 |  Obs |   CHAR | SCHAR |
 | ---: | -----: | ----: |
 |    1 | 123456 |   123 |
@@ -306,6 +332,8 @@ PROC PRINT DATA = TMP4_2;
 RUN;
 ```
 
+**The SAS System**
+
 |  Obs |      PI | RPI1 | RPI2 |
 | ---: | ------: | ---: | ---: |
 |    1 | 3.14159 | 3.14 |    3 |
@@ -318,6 +346,8 @@ RUN;
 PROC PRINT DATA = TMP4_3;
 RUN;
 ```
+
+**The SAS System**
 
 |  Obs |   DT |
 | ---: | ---: |
@@ -338,6 +368,8 @@ RUN;
 PROC PRINT DATA = A(OBS = 10 KEEP = MAKE MSRP);
 RUN;
 ```
+
+**The SAS System**
 
 |  Obs |  Make |    MSRP |
 | ---: | ----: | ------: |
@@ -362,6 +394,8 @@ PROC PRINT DATA = A(OBS = 10 KEEP = MAKE MSRP MSRP1);
 RUN;
 ```
 
+**The SAS System**
+
 |  Obs |  Make |    MSRP | MSRP1 |
 | ---: | ----: | ------: | ----: |
 |    1 | Acura | $36,945 | 36946 |
@@ -385,6 +419,8 @@ RUN;
 PROC PRINT DATA = A(OBS=10);
 RUN;
 ```
+
+**The SAS System**
 
 |  Obs | MSRP1 |
 | ---: | ----: |
@@ -422,6 +458,8 @@ PROC PRINT DATA = B2(OBS=10);
 RUN;
 ```
 
+**The SAS System**
+
 |  Obs |      MSRP2 | MSRP1 |
 | ---: | ---------: | ----: |
 |    1 |     DAYU3W | 36946 |
@@ -434,6 +472,8 @@ RUN;
 |    8 | XIAOYU1000 | 25941 |
 |    9 |     DAYU3W | 35941 |
 |   10 |     DAYU3W | 31841 |
+
+**The SAS System**
 
 |  Obs |       MSRP2 | MSRP1 |
 | ---: | ----------: | ----: |
@@ -459,6 +499,8 @@ RUN;
 PROC PRINT DATA = C(OBS=10);
 RUN;
 ```
+
+**The SAS System**
 
 |  Obs | MSRP1 |
 | ---: | ----: |
@@ -508,6 +550,7 @@ RUN;
 /* IF SUBSTR(A,1,1) NOT IN ("1", "2") */
 
 ```
+**The SAS System**
 
 |  Obs | MSRP1 | MSRP2 |
 | ---: | ----: | ----: |
