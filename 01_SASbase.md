@@ -263,6 +263,8 @@ RUN;
 |    3 |    3 |    4 |
 |    4 |    2 |    5 |
 
+<img src="./00.Source/p0101.png" alt="p010" style="zoom:40%;"/>
+
 #### 第四部分 函数介绍
 
 **Function Categories:** 
