@@ -134,8 +134,8 @@ telnet: Unable to connect to remote host
 https://www.oracle.com/technetwork/cn/topics/winia64soft-083954-zhs.html
 
 # 辅助下载链接
-https://ivan-bucket-out-001.oss-cn-beijing.aliyuncs.com/out/instantclient-basic-windows.x64-12.2.0.1.0.zip
-https://ivan-bucket-out-001.oss-cn-beijing.aliyuncs.com/out/instantclient-odbc-windows.x64-12.2.0.1.0-2.zip
+https://ivan-bucket-out-001.oss-cn-beijing.aliyuncs.com/out/DataSAS/instantclient-basic-windows.x64-12.2.0.1.0.zip
+https://ivan-bucket-out-001.oss-cn-beijing.aliyuncs.com/out/DataSAS/instantclient-odbc-windows.x64-12.2.0.1.0-2.zip
 ```
 
 各自解压到对应文件，如C:\App，可以看到文件路径如下：
@@ -236,7 +236,7 @@ Oracle ODBC Driver is installed successfully.
 https://dev.mysql.com/downloads/connector/odbc/
 
 # 辅助下载链接
-https://ivan-bucket-out-001.oss-cn-beijing.aliyuncs.com/out/mysql-connector-odbc-8.0.16-winx64.msi
+https://ivan-bucket-out-001.oss-cn-beijing.aliyuncs.com/out/DataSAS/mysql-connector-odbc-8.0.16-winx64.msi
 ```
 
 点击安装后，查看ODBC，可得：
@@ -258,8 +258,8 @@ https://ivan-bucket-out-001.oss-cn-beijing.aliyuncs.com/out/mysql-connector-odbc
 https://www.ibm.com/support/pages/db2-odbc-cli-driver-download-and-installation-information
 
 # 辅助下载链接
-https://ivan-bucket-out-001.oss-cn-beijing.aliyuncs.com/out/v10.1fp6_nt32_odbc_cli.zip
-https://ivan-bucket-out-001.oss-cn-beijing.aliyuncs.com/out/v10.1fp6_ntx64_odbc_cli.zip
+https://ivan-bucket-out-001.oss-cn-beijing.aliyuncs.com/out/DataSAS/v10.1fp6_nt32_odbc_cli.zip
+https://ivan-bucket-out-001.oss-cn-beijing.aliyuncs.com/out/DataSAS/v10.1fp6_ntx64_odbc_cli.zip
 ```
 
 解压，文件路径：
