@@ -1,5 +1,5 @@
 #### 1、SAS宏
-```plsql
+```SAS
 %MACRO printTable(table);
 
 PROC PRINT DATA=&TABLE;RUN;
@@ -14,7 +14,7 @@ PROC PRINT DATA=&TABLE;RUN;
 > ...
 
 #### 2、SAS宏Char函数
-```plsql
+```SAS
 /*----------------------------------------------*/
   /*       Macro Char Functions                   */
   /*----------------------------------------------*/
@@ -145,7 +145,7 @@ PROC PRINT DATA=&TABLE;RUN;
 > 145  
 
 #### 3、SAS宏Do语句
-```plsql
+```SAS
  /*----------------------------------------------*/
  /*       %DO  statement                         */
  /*----------------------------------------------*/
@@ -202,7 +202,7 @@ PROC PRINT DATA=&TABLE;RUN;
 > 110  
 
 #### 4、SAS宏If语句
-```plsql
+```SAS
  /*----------------------------------------------*/
   /*       %IF  statement                         */
   /*----------------------------------------------*/
@@ -270,7 +270,7 @@ test 4 successful
 > 115  
 
 #### 5、SAS宏变量
-```plsql
+```SAS
 /*----------------------------------------------*/
   /*      Macro Variables                        */
   /*----------------------------------------------*/
@@ -344,12 +344,12 @@ test 4 successful
 > GLOBAL SYSCASINIT 0
 > GLOBAL SYSRANDOM               112358
 > GLOBAL SYSRANEND           1588186417
-> GLOBAL SYSUSERNAME 1440420407@qq.com                                                                                                
+> GLOBAL SYSUSERNAME                                                                                               
 >                                                                                        
 > GLOBAL SYS_COMPUTE_DATA /compute_data
 > GLOBAL SYS_COMPUTE_JOB_ID CB954F58-BEE1-3D4F-B72A-31D492A7AB3B
 > GLOBAL SYS_COMPUTE_SESSION_ID d080443a-b1ea-448a-8489-5791f757210a-ses0000
-> GLOBAL SYS_COMPUTE_SESSION_OWNER 1440420407@qq.com
+> GLOBAL SYS_COMPUTE_SESSION_OWNER 
 > GLOBAL TWORKLOC 
 > "/viya/tmp/d080443a-b1ea-448a-8489-5791f757210a/SAS_work47AD000000AC_sas-launcher-b8c51478-6a85-429c-9200-4f48704a3cab-zwngd"
 > GLOBAL VALIDLOCALE zh_CN
@@ -363,8 +363,8 @@ test 4 successful
 > GLOBAL _CLIENTAPPVERSION 2020.1.3
 > GLOBAL _CLIENTMACHINE sasstudioapp5f9dc9d488mqght
 > GLOBAL _CLIENTMODE viya
-> GLOBAL _CLIENTUSERID 1440420407@qq.com
-> GLOBAL _CLIENTUSERNAME 1440420407@qq.com
+> GLOBAL _CLIENTUSERID 
+> GLOBAL _CLIENTUSERNAME 
 > GLOBAL _CLIENTVERSION 6.163.19
 > GLOBAL _EXECENV SASStudio
 > GLOBAL _GITVERSION         0.27
@@ -383,7 +383,7 @@ test 4 successful
 > GLOBAL _STUDIONOTES 
 > GLOBAL _STUDIOSOURCE 
 > GLOBAL _STUDIOSTIMER 
-> GLOBAL _USERHOME /home/1440420407@qq.com
+> GLOBAL _USERHOME /home/
 > AUTOMATIC AFDSID 0
 > AUTOMATIC AFDSNAME 
 > AUTOMATIC AFLIB 
@@ -452,7 +452,7 @@ test 4 successful
 > AUTOMATIC SYSTIMEZONE GMT+08:00
 > AUTOMATIC SYSTIMEZONEIDENT ETC/GMT-8
 > AUTOMATIC SYSTIMEZONEOFFSET 28800
-> AUTOMATIC SYSUSERID 1440420407@qq.com
+> AUTOMATIC SYSUSERID
 > AUTOMATIC SYSVER V.04.00 
 > AUTOMATIC SYSVIYARELEASE 20210406.1617742339209
 > AUTOMATIC SYSVIYAVERSION Stable 2020.1.3
@@ -465,7 +465,7 @@ test 4 successful
 > 110  
 
 #### 6、SAS宏参数
-```plsql
+```SAS
 /*----------------------------------------------*/
   /*       Macro Parameters                       */
   /*----------------------------------------------*/
@@ -572,7 +572,7 @@ test 4 successful
 > 134  
 
 #### 7、SAS宏引用
-```plsql
+```SAS
   /*----------------------------------------------*/
   /*       Macro Quoting                          */
   /*----------------------------------------------*/
@@ -758,5 +758,4 @@ mvar =
 > 160  %studio_hide_wrapper;
 > 168  
 > 169  
-
 
