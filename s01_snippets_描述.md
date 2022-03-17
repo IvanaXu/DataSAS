@@ -1,4 +1,4 @@
-#### 1、SAS宏
+#### 1、自定义ODS输出
 ```SAS
 ODS HTML5(ID=WEB);
 ODS PDF(ID=WEB);
@@ -39,7 +39,7 @@ NOTE: ODS PDF(WEB) 打印了 22 页，
 ...
 ```
 
-#### 2、SAS宏Char函数
+#### 2、PROC SQL
 ```SAS
 PROC SQL;
 
